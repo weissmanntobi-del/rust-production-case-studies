@@ -21,9 +21,9 @@ jobs:
           - name: axum-api-case-study
             path: case-studies/axum-api-case-study
           - name: secure-file-scanner
-            path: case-studies/secure-file-scanner
+            path: case-studies/secure-file-scanner-case-study
           - name: async-worker-bounded-queue
-            path: case-studies/async-worker-bounded-queue
+            path: case-studies/async-worker-bounded-queue-case-study
 
     steps:
       - name: Checkout repository
