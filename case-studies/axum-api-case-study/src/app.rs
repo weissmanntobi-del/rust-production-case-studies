@@ -1,6 +1,6 @@
 use crate::{config::Settings, routes};
-use axum::Router;
 use axum::http::StatusCode;
+use axum::Router;
 use http::Method;
 use std::sync::{
     atomic::{AtomicBool, AtomicU64, Ordering},
@@ -63,4 +63,3 @@ pub fn build_router_with_state(settings: Settings, state: AppState) -> Router {
         .layer(cors)
         .with_state(state)
 }
-
